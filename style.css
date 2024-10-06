@@ -1,0 +1,40 @@
+/* Оформление формы с использованием Flexbox и CSS Grid */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 400px;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    .form-container {
+        grid-template-columns: 1fr;
+    }
+}
